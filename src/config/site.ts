@@ -9,7 +9,11 @@ export interface SocialLink extends NavLink {
 }
 
 export const siteConfig = {
-  name: "Quiet Pages",
+  name: "Avadhoot Dandekar",
+  /** SVG file in `public/`; leave empty to show the site name as text. */
+  logo: "/logo.svg",
+  /** When a logo is set, show the site name beside it. Set false for logo only. */
+  showNameWithLogo: false,
   title: "Quiet Pages - An independent magazine on writing, design, and the slow web",
   description:
     "An independent magazine on writing, design, and the slow web. Essays, field notes, and conversations, published occasionally and read closely.",

@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import heroImage from "@/assets/hero-mist.jpg";
+import heroImage from "@/assets/hero-snow.jpg";
 import Icon from "@/components/ui/Icon.astro";
 import { homeConfig } from "@/config/home";
 import { postUrl, type Post } from "@/lib/posts";
@@ -37,7 +37,7 @@ const parts = hero.title.split(/(\*[^*]+\*)/).filter(Boolean);
       {hero.lead}
     </p>
     <div
-      class="rise mt-10 flex flex-wrap items-center justify-center gap-3"
+      class="rise mt-10 flex flex-wrap items-center justify-center gap-3 p-4"
       style="--rise-order: 2"
     >
       <a href={postUrl(lead)} class="btn btn-primary group">

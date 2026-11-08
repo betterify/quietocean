@@ -15,8 +15,22 @@ const isCurrent = (href: string) => path === href || path.startsWith(href);
 
 <header class="site-header" data-site-header>
   <div class="shell flex h-(--header-h) items-center gap-4">
-    <a href="/" class="serif mr-auto rounded-lg text-[1.5rem] font-medium tracking-[-0.01em]">
-      {siteConfig.name}
+    <a
+      href="/"
+      class="serif mr-auto inline-flex items-center gap-3 rounded-lg text-[1.5rem] font-medium tracking-[-0.01em]"
+    >
+      {siteConfig.logo ? (
+        <>
+          <img
+            src={siteConfig.logo}
+            alt={siteConfig.showNameWithLogo ? "" : siteConfig.name}
+            class="h-10 w-auto max-w-40 object-contain"
+          />
+          {siteConfig.showNameWithLogo && <span>{siteConfig.name}</span>}
+        </>
+      ) : (
+        siteConfig.name
+      )}
     </a>
 
     <nav class="hidden md:block" aria-label="Primary">

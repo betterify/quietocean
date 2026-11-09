@@ -14,7 +14,7 @@ export const siteConfig = {
   logo: "/logo.svg",
   /** When a logo is set, show the site name beside it. Set false for logo only. */
   showNameWithLogo: false,
-  title: "Quiet Pages - An independent magazine on writing, design, and the slow web",
+  title: "Avadhoot Dandekar - A personal Blog",
   description:
     "An independent magazine on writing, design, and the slow web. Essays, field notes, and conversations, published occasionally and read closely.",
   siteUrl: "https://quietpages.xocoweb.workers.dev",

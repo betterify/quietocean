@@ -27,10 +27,10 @@ const toPost = (entry: CollectionEntry<"blog">): Post => ({
 
 let cache: Post[] | undefined;
 
-/** Published posts, newest first. Drafts never leave this function. */
+/** Posts visible in this environment, newest first. Drafts are local-only. */
 export const getPosts = async (): Promise<Post[]> => {
   if (!cache) {
-    cache = (await getCollection("blog", ({ data }) => !data.draft))
+    cache = (await getCollection("blog", ({ data }) => import.meta.env.DEV || !data.draft))
       .map(toPost)
       .sort((a, b) => b.date.valueOf() - a.date.valueOf());
   }

@@ -127,24 +127,24 @@ draft: false
 ---
 ```
 
-| Field            | Notes                                                                                         |
-| ---------------- | --------------------------------------------------------------------------------------------- |
-| `title`          | Required. The headline, the `<title>`, and the card and search title                          |
-| `excerpt`        | Required. The standfirst, the card text, the meta description, the feed item, and searched    |
-| `date`           | Required. The publication date; posts are listed newest first                                 |
-| `updated`        | Shown as "Updated" in the byline and used as `dateModified` in the JSON-LD                    |
-| `category`       | Required. A section slug from `src/config/taxonomy.ts`                                        |
-| `tags`           | Tag slugs from `src/config/taxonomy.ts`. Defaults to none                                     |
-| `author`         | Required. An author slug from `src/config/authors.ts`                                         |
-| `thumbnail`      | Required. A local image beside the post: the card image, the lead image, and the social card  |
-| `thumbnailAlt`   | Required. Alt text for the lead image on the article page                                     |
-| `imageCredit`    | A caption and photo credit under the lead image. `source` defaults to `Unsplash`              |
-| `readingTime`    | Minutes. Left out, it is estimated from the body, ignoring code blocks and HTML tags          |
-| `featured`       | Makes the post a candidate for the homepage lead essay                                        |
-| `draft`          | `true` keeps the post out of every page, listing, the feed, the search index, and the sitemap |
-| `seoTitle`       | Overrides the `<title>` without changing the headline                                         |
-| `seoDescription` | Overrides the meta description without changing the standfirst                                |
-| `canonical`      | An absolute URL, for a piece first published elsewhere                                        |
+| Field            | Notes                                                                                        |
+| ---------------- | -------------------------------------------------------------------------------------------- |
+| `title`          | Required. The headline, the `<title>`, and the card and search title                         |
+| `excerpt`        | Required. The standfirst, the card text, the meta description, the feed item, and searched   |
+| `date`           | Required. The publication date; posts are listed newest first                                |
+| `updated`        | Shown as "Updated" in the byline and used as `dateModified` in the JSON-LD                   |
+| `category`       | Required. A section slug from `src/config/taxonomy.ts`                                       |
+| `tags`           | Tag slugs from `src/config/taxonomy.ts`. Defaults to none                                    |
+| `author`         | Required. An author slug from `src/config/authors.ts`                                        |
+| `thumbnail`      | Required. A local image beside the post: the card image, the lead image, and the social card |
+| `thumbnailAlt`   | Required. Alt text for the lead image on the article page                                    |
+| `imageCredit`    | A caption and photo credit under the lead image. `source` defaults to `Unsplash`             |
+| `readingTime`    | Minutes. Left out, it is estimated from the body, ignoring code blocks and HTML tags         |
+| `featured`       | Makes the post a candidate for the homepage lead essay                                       |
+| `draft`          | `true` is visible locally but excluded from production output                                |
+| `seoTitle`       | Overrides the `<title>` without changing the headline                                        |
+| `seoDescription` | Overrides the meta description without changing the standfirst                               |
+| `canonical`      | An absolute URL, for a piece first published elsewhere                                       |
 
 Start the body's headings at `##`; the title is the page's only `h1`.
 
